@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.25fr 1.2fr 0.25fr;
+
+
+    grid-template-areas: 
+    "main main main main"
+    "sidebar nav nav nav"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+}
+nav{
+    background: #5e2fd5;
+    grid-area: nav;
+}
+main{
+    background: #286057;
+    grid-area: main;
+}
+#sidebar{
+    background:#265990;
+    grid-area: sidebar;
+}
+#content1{
+    background: #7425bc;
+    grid-area: content1;
+
+}
+
+#footer{
+    background: #393f4b;
+    grid-area: footer;
+}
