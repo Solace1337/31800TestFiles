@@ -1,0 +1,13 @@
+.calc{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+
+
+    grid-template-areas: 
+    "main main main main"
+    "sidebar nav nav nav"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+}
