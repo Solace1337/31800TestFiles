@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <link href="./styles.css"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+       <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const buttons = document.querySelectorAll('.container > div');
+      buttons.forEach(button => {
+        button.addEventListener('click', buttonClick);
+      });
+      const display = document.getElementById('dis');
+
+      function buttonClick(event) {
+        const button = event.target;
+        const buttonText = button.textContent;
+
+        switch (buttonText) {
+          case 'AC':
+            display.textContent = '0';
+            break;
+          case '=':
+
+            try {
+              const result = eval(display.textContent.replace('×', '*').replace('÷', '/'));
+              display.textContent = result.toFixed(2); 
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'x!':
+            try {
+              const num = eval(display.textContent);
+              const result = factorial(num);
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case '%':
+            try {
+              const result = (eval(display.textContent))/100;
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'sin':
+            try {
+              const result = Math.sin(eval(display.textContent));
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'ln':
+            try {
+              const result = Math.log(eval(display.textContent));
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'cos':
+            try {
+              const result = Math.cos(eval(display.textContent));
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'log':
+            try {
+              const result = Math.log10(eval(display.textContent));
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'tan':
+            try {
+              const result = Math.tan(eval(display.textContent));
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case '√':
+            try {
+              const result = Math.sqrt(eval(display.textContent));
+              display.textContent = result.toFixed(2);
+            } catch (error) {
+              display.textContent = 'Error';
+            }
+            break;
+          case 'EXP':
+            display.textContent += 'E';
+            break;
+          case 'x^y':
+            display.textContent += '**';
+            break;
+          default:
+            if (display.textContent === '0' || display.textContent === 'Error') {
+              display.textContent = buttonText;
+            } else {
+              display.textContent += buttonText;
+            }
+            break;
+        }
+      }
+      function factorial(num) {
+        if (num < 0) {
+          throw new Error('Factorial of a negative number is undefined.');
+        }
+        if (num === 0 || num === 1) {
+          return 1;
+        }
+        let result = 1;
+        for (let i = 2; i <= num; i++) {
+          result *= i;
+        }
+        return result;
+      }
+    });
+
+    </script>
+  
+  </head>
+  
+  <div class="container">
+    <div id="dis">0</div>
+
+    <div id="deg">Deg</div>
+    <div id="fac">x!</div>
+    <div id="left_">(</div>
+    <div id="right_">)</div>
+    <div id="per">%</div>
+    <div id="ac">AC</div>
+    
+    <div id="sin">sin</div>
+    <div id="ln">ln</div>
+    <div id="seven">7</div>
+    <div id="eight">8</div>
+    <div id="nine">9</div>
+    <div id="div">÷</div>
+    
+    <div id="cos">cos</div>
+    <div id="log">log</div>
+    <div id="four">4</div>
+    <div id="five">5</div>
+    <div id="six">6</div>
+    <div id="mul">*</div>
+    
+    <div id="tan_">tan</div>
+    <div id="sqrt">√</div>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="sub_">-</div>
+    
+    <div id="EXP">EXP</div>
+    <div id="pow">x^y</div>
+    <div id="zero_">0</div>
+    <div id="period">.</div>
+    <div id="equal">=</div>
+    <div id="add_">+</div>
+ 
+
+   
+
+  </div>
+  
