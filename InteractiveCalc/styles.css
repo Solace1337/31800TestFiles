@@ -42,7 +42,7 @@
   
   #deg {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: deg;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -50,7 +50,7 @@
 
   #fac {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: fac;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -58,7 +58,7 @@
   
   #left_ {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: left_;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -66,7 +66,7 @@
 
   #right_ {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: right_;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -74,7 +74,7 @@
 
   #per {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: per;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -82,7 +82,7 @@
 
   #ac {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: ac;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -90,7 +90,7 @@
 
   #sin {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: sin;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -98,7 +98,7 @@
 
   #ln {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: ln;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -130,7 +130,7 @@
 
   #div {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: div;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -138,7 +138,7 @@
 
   #cos {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: cos;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -146,7 +146,7 @@
 
   #log {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: log;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -178,7 +178,7 @@
 
   #mul {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: mul;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -186,7 +186,7 @@
 
   #tan_ {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: tan_;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -194,7 +194,7 @@
 
   #sqrt {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: sqrt;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -227,7 +227,7 @@
 
   #sub_ {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: sub_;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -235,7 +235,7 @@
 
   #EXP {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: EXP;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -243,7 +243,7 @@
 
   #pow {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: pow;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -267,7 +267,7 @@
 
   #equal {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: equal;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -275,7 +275,7 @@
 
   #add_ {
     color: black;
-    background: #dadce0;
+    background: #f03413;
     grid-area: add_;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
